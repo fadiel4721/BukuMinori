@@ -1,0 +1,163 @@
+/* Stil utama */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 170px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Media query untuk tablet */
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    .logo img {
+        margin-right: 0;
+    }
+
+    .navigation a {
+        margin: 0 5px;
+    }
+
+    .parallax {
+        height: 70vh;
+    }
+
+    #text {
+        font-size: 2em;
+    }
+
+    .sec {
+        padding: 50px;
+    }
+
+    .sec h2 {
+        font-size: 2.5em;
+    }
+
+    .sec p {
+        font-size: 0.9em;
+    }
+}
+
+/* Media query untuk perangkat Android */
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+
+    .parallax {
+        height: 60vh;
+    }
+
+    #text {
+        font-size: 1.5em;
+    }
+
+    .sec {
+        padding: 30px;
+    }
+
+    .sec h2 {
+        font-size: 2em;
+    }
+
+    .sec p {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #87cefa;
+}
+.selamat-minori p {
+  margin-top: 0;
+  font-size: 25px;
+  font-family: "Lucida" Grande, sans-serif;
+}
+.container {
+  width: 100%;
+  display: flex;
+  max-width: 850px;
+  background: #00bfff;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
+}
+.selamat-minori {
+  text-align: center;
+  position: relative;
+  margin-bottom: -40px;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.text1 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: rgba(206, 246, 30, 0);
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text2 {
+  font-size: 30px;
+  justify-content: center;
+  color: darkgreen;
+  background: rgba(255, 255, 255, 0);
+  font-family: Georgia, serif;
+}
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -30px;
+  }
+
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+.login {
+  width: 400px;
+}
+form {
+  width: 250px;
+  margin: 60px auto;
+}
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+hr {
+  border-top: 2px solid #ffa12c;
+}
+.right .image-container img {
+  width: 80%; /* Atur lebar gambar sesuai kebutuhan Anda */
+  max-width: 450px; /* Atur lebar maksimum jika diperlukan */
+  height: auto; /* Biarkan tinggi mengikuti proporsi gambar */
+  position: relative;
+  margin-top: 10rem;
+}
+
+.right img {
+  width: 450px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+input {
+  width: 100%;
+  margin: 2px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 252px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #000080;
+}
+button:hover {
+  background: rgba(214, 86, 64, 1);
+}
+.right .image-container img {
+  position: relative;
+  margin-top: 10rem;
+}
+@media (max-width: 880px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  form {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .login {
+    width: 400px;
+    padding: 20px;
+  }
+  button {
+    width: 82%;
+  }
+  .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .right .image-container img {
+    width: 100%;
+    height: 80%;
+    margin-right: 100px;
+  }
+}
+a i .back {
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  
+}
+.field-group {
+  width: 600px;
+  position: relative;
+}
+.input-field {
+  width: 41%;
+  outline: 0;
+  padding: 10px;
+  padding-left: 60px;
+
+}
+.input-field::placeholder {
+  color: #999999;
+}
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #999999;
+  font-size: 20px;
+
+}
+.input-field:focus {
+  color: black;
+  border-color: #ffff;
+}
+.input-field:focus ~ .icon{
+  color: black;
+}

@@ -1,0 +1,53 @@
+.profil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.profil-info {
+    display: flex;
+    align-items: center;
+}
+
+.profil-foto {
+    margin-right: 20px;
+}
+
+.profil-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profil-text p {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Form untuk mengganti foto profil */
+.profil-foto form {
+    margin-top: 10px;
+}
+
+.profil-foto input {
+    display: none;
+}
+
+.profil-foto button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.profil-foto button:hover {
+    background-color: #2980b9;
+}

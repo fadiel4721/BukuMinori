@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #02070d;
+}
+.isi {
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.isi * {
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+}
+.jamdigital {
+    width: 50%;
+   
+    padding: 50px 25px;
+   
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+}
+
+#hari {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #c5c5c5;
+    text-align: center;
+}
+.wrapper {
+   text-align: center; 
+}
+#waktu {
+    font-size: 70px;
+    display: inline-block;
+}
+#formatwaktu {
+    font-size: 30px;
+    display: inline-block;
+}
+.bentuk1 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background: linear-gradient(450deg, #ff5b84, #eb3461);
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 100px;
+    right: -100px;
+}
+.bentuk2 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background: linear-gradient(135deg, #426cf8, #3ebdf0);
+    border-radius: 50%;
+    z-index: -1;
+    top: 100px;
+    left: -100px;
+}
